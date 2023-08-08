@@ -1,1 +1,1 @@
-# data-science-training
+# data-science
