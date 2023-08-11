@@ -6,4 +6,5 @@ number = [2,5,8,1,0,9]
 letters =['r','n','s','h']
 number.extend(letters)
 print("different list: ",number)
-#
+#[2, 5, 8, 1, 0, 9, 'r', 'n', 's', 'h']
+
