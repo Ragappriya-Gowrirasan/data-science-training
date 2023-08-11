@@ -10,4 +10,10 @@ print(letters) #['e', 'g'] *****f******
 del letters[-1:-5]
 print(letters) #['e', 'g'] *****f******
 
+#all delete (empty box)
+#list = [{1,4,6} , (2),['1.1','priya',1.1]]
+#print(list)
+#del list[:]
+#print(list)
+
 
