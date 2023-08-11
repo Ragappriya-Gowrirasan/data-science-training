@@ -5,7 +5,7 @@ print(name) #['priya', 'harish', 'varsha', 'nilany', 'thusha', 'roshi']
 name.remove('thusha')
 print(name) #['priya', 'harish', 'varsha', 'nilany', 'roshi']
 name.remove('varsha')
-print(name)
+print(name) #['priya', 'harish', 'nilany', 'roshi']
 
 
 
