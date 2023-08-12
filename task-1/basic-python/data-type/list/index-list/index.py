@@ -22,3 +22,7 @@ print(vegetable) # ['corn', 'mushroom', 'carrot']
 print(vegetable.index('carrot')) # 2
 
 
+# exmaple 3
+alphabets = ['a','v','g','y','i','o','l']
+list = alphabets.index('v',4)
+print(list)
