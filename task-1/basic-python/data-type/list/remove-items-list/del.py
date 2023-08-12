@@ -16,4 +16,8 @@ print(letters) #['e', 'g'] *****f******
 #del list[:]
 #print(list)
 
+name = ['priya','harish','varsha','nilany','thusha','roshi']
+del name[3]
+print(name)
+
 

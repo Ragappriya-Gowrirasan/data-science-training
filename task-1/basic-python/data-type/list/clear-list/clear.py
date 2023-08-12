@@ -30,7 +30,7 @@ print(birds) # []
 list = [{1,4,6} , (2),['1.1','priya',1.1]]
 print(list)
 del list[:]
-print(list)
+print(list) #[]
 
 
 
