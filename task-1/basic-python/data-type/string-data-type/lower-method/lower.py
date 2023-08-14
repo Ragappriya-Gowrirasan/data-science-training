@@ -3,11 +3,11 @@
 name = 'PYTHON'
 print(name.lower())
 
-#example
+#example 1
 subjects = "COMmeRcE, tamIL, eNgliSh"
 print(subjects.lower())
 
-# example
+# example 2
 list1 = "PYTHON"
 list2 = "JAVA"
 
