@@ -6,3 +6,4 @@ print(message.find('of'))
 name = 'la la lie lie la la lie'
 result = name.find('lie')
 print(result)
+
