@@ -20,9 +20,9 @@ print(str1)
 #example 3
 print('enter your name: ')
 names = input()
-print('your name is: ',names)
-lenth =len(names)
-print(lenth)
+print('your name is: ',names) 
+lenth =len(names) # your name is:  harish
+print(lenth) # 6
 
 
 
