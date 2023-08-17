@@ -11,3 +11,4 @@ print(text3)
 print('are you sure. is this your pet name?? ')
 text4 = input()
 print('your pet name is ', text3.casefold())
+
