@@ -6,3 +6,5 @@ print(a.islower())
 print('enter your name: ')
 b = input()
 print(b.islower())
+
+
