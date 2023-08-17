@@ -8,3 +8,4 @@ print('enter your friend name: ')
 random = input()
 random1 = random.capitalize()
 print(random1.center(58))
+

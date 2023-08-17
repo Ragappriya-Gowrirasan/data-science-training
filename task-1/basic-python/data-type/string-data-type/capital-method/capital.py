@@ -11,7 +11,7 @@ print(letters.capitalize()) # Mala
 print('enter your name :')
 names1 = input()
 names2 = names1[0]
-print('this is your name first letter: ' , names2)
-print('your name frist letter in capital: ' , names2.capitalize())
+print('this is your name first letter: ' , names2) # n
+print('your name frist letter in capital: ' , names2.capitalize()) # N
 
 
