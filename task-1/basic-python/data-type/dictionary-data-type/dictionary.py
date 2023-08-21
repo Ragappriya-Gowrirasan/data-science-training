@@ -57,5 +57,55 @@ nested= {'name':'p','age':23 ,'fav':['mango','banana'],'language':{'forign':'eng
 print(nested['fav'][0])
 print(nested['language']['srilanka'])
 
+#keys
+name1 = {1:2,3:4,5:6,7:8,9:'priya',0:'nila'}
+k = name1.keys()
+print(k)
+
+# popitems #last items remove
+letters = {'e':'u','d':'j','k':'i','n':'r'}
+letters.popitem()
+print(letters)
+
+# update function
+b = {'K':'s'}
+letters.update(b)
+print(letters)
+
+c = {'e':'h'}
+letters.update(c)
+print(letters)
+
+# get method
+num = {2:'yyy',5:'rrr',8:'nnn',0:'aaaa'}
+num[5]
+print(num)
+num.get(8)
+print(num)
+
+#fromkeys 
+letters = {'a','f','k','t'}
+let = dict.fromkeys(letters)
+print(let)
+
+num = 58
+let_new = dict.fromkeys(letters,num)
+print(let_new)
+
+# mutable object
+keys = {'a','e','i','o'}
+value = 20
+new = dict.fromkeys(keys,value)
+print(new)
+#value.append(2)
+print(new)
+
+# setdefault
+n = {'name':'priya','age':23}
+n.pop('age')
+print(n)
+n.setdefault('age',24)
+print(n)
+
 
 
