@@ -32,3 +32,16 @@ print(e) # same variable change
 
 f = tuple(e)
 print(f)
+
+# loop in for
+tup1 = (2,4,7,5,6,3,4,5,2,5)
+for k in tup1:
+    print(k)
+
+tup2 = ('priya')
+for r in tup2 :
+    print(r)
+
+# mul
+tup3c=tup2 * 3
+print(tup3c)
