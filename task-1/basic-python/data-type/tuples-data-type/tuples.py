@@ -22,7 +22,7 @@ b = a+c
 print(b)
 
 #cound
-print(b.count(5))
+print('count' ,b.count(5))
 
 # change to list as tuple
 e = [3,6,8,0,5,4,7,2]

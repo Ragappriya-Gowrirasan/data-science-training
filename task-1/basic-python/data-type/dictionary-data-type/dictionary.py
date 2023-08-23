@@ -86,7 +86,7 @@ print(num)
 #fromkeys 
 letters = {'a','f','k','t'}
 let = dict.fromkeys(letters)
-print(let)
+print('fromkeys: ',let)
 
 num = 58
 let_new = dict.fromkeys(letters,num)
