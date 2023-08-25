@@ -22,7 +22,16 @@ while counter <=10:
     print(counter)
     counter = counter + 2
 
-c = 0
-while True:
+#c = 0
+#while True:
     print('hello')
-    
+
+i = 1
+while i <=5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+    print('invald num')
+print('program terminate')
+

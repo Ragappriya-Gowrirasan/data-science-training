@@ -1,19 +1,40 @@
-#contact book
-#concepts: variable , loop statement , if statement , dictionary method
-print('*****************')
-print('**************contact book*****************' )
-print('*******************')
-print('1. contact add')
-print('2. contact view')
-print('3. contact update')
-print('4. contact delete')
-print('5. exit')
-print('***********************')
-
-# user input name
+# contact book page
+import turtle
+#turtle package into screen function
+screen1 = turtle.Screen()
+screen1.setup(500,500)
+screen1.bgcolor("gray")
 phone_book = {}
-dictionary_name = input('Enter the dictionary name:')
-phone_book[dictionary_name] = {}
+while True:
+    print('1.add contact')
+    print('2.view contact')
+    print('3.search contact')
+    print('4.delete contact')
+    print('5.exit')
 
+    contact =(input('enter the choice number of the contact: '))
 
-
+    if contact =='1':
+        name = input('type the contact name: ')
+        number = input('enter the contact number: ')
+        mail = input('type the mail address: ')
+        phone_book = {'name':name , 'number':number , 'mail address':mail}
+        print('The contact is successfuly saved')
+    elif contact =='2':
+        print('contact details: ',phone_book)
+    elif contact =='3':
+        search = input('enter the contact name: ')
+        for search_name in (phone_book):
+            search == phone_book
+            print(search_name)
+        #search_name = search.check(phone_book)
+        #search == search_name
+       # print(search)
+    elif contact == '4':
+        delete_contact = input('enter the delete contact name: ')
+        delete_contact = phone_book.clear()
+        print('this contact is remove')
+    elif contact == '5':
+        print('exit contact')
+    else:
+        print('contact is exit')

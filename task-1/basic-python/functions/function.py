@@ -25,5 +25,11 @@ def name2(n):
 name2(name111)
 
 # example 4
+t = int(input('enter num1:'))
+r = int(input('enter num2: '))
+def a(t,r):
+    u = t+r
+    print(u)
+a(t,r)
 
     
