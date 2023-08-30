@@ -1,9 +1,7 @@
 # contact book page
-import turtle
-#turtle package into screen function
-screen1 = turtle.Screen()
-screen1.setup(500,500)
-screen1.bgcolor("gray")
+
+### start the contact page ##
+
 phone_book = {}
 while True:
     print('1.add contact')
@@ -38,3 +36,4 @@ while True:
         print('exit contact')
     else:
         print('contact is exit')
+
