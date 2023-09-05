@@ -1,42 +1,34 @@
 #HTTP request 
 import requests
 from bs4 import BeautifulSoup as bs
+import pandas as pd
 
 #Send an HTTP request and get the page content
 url = "https://reviews.webmd.com/drugs/drugreview-841-atorvastatin-oral"
 response = requests.get(url)
 
-soup = bs(response.content , 'html.parser')
-# # 01 div box
-# l1 = soup.find("div", class_="review-details")
-# l2= l1.find("strong" , class_="condition.name")
-# print(l2)
-# # 02 div box
-# l3 = soup.find("div" , class_="review-details")
-# l4 =l3.find("div" , class_="condition")
-# print(l4)
-# #03 div box
-# l5 = soup.find("div", class_="review-details")
-# l6 = l5.find("strong", class_="condition")
+soup = bs(response.content, "lxml")
 
-# # 04 div box
-# l7 = soup.find("div", class_="review-details")
-# l8 = l7.find("strong", class_="condition")
-print(url)
+#list add condition
+
 condition = []
+for test in soup.findAll("div" , class_="review-details"):
+   tests = test.find("strong" , class_="condition")
+   condition.append(tests)
+
+# reviews
+
 reviews = []
 
-for test in soup.find_all("div" , class_="shared-reviews-container"):
-   print(condition.append(test))
+for rev in soup.findAll("div" , class_="overall-rating"):
+   print(rev)
+   break
+   r = rev.find("strong")
+   reviews.append(r.text)
+   res = r.text
 
+print(reviews)
 
-
-# add list 
-# lists = []
-# lists.append(l2)
-# lists.append(l4)
-# lists.append(l6)
-# lists.append(l8)
-#print(lists)
+lists = {'condition':condition,'rating':reviews}
 # list1 = pd.DataFrame(lists)
-# list1.to_csv("drug")
+# list1.to_csv("drug.csv")
