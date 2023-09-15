@@ -38,10 +38,10 @@ for review in soup.find_all("div", class_="shared-reviews-container"):
 
 # Create a DataFrame
 data = {"Review": reviews, "Rating": ratings}
-df = pd.DataFrame(data)
+data_f = pd.DataFrame(data)
 
 # Export data to a CSV file
-df.to_csv("webmd_reviews.csv", index=False)
+data_f.to_csv("webmd_reviews.csv", index=False)
 
 
 
